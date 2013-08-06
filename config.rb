@@ -57,6 +57,7 @@ helpers do
   def nav_link(page,title)
     active = self.current_path.chomp("index.html").chomp("/") == page ? { :class => 'active'} : {}
     link_to(title,page,active)
+  end
 end
 
 # Build-specific configuration
